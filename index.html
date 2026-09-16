@@ -98,7 +98,16 @@ footer{padding:32px 0;background:#fff;border-top:1px solid var(--border)}.foot{d
 <section id="contact" class="contact"><div class="container contact-grid">
 <div><div class="eyebrow" style="color:#9fc5ff">CONTACT</div><h2>Votre problème mérite une solution.</h2><p class="contact-desc">Appelez-moi ou envoyez votre demande. Nous verrons ensemble l'intervention la plus adaptée à votre situation.</p>
 <div class="contact-items"><a class="contact-item" href="tel:0634373165"><span class="ci">📞</span><div><small>Téléphone</small><strong>06 34 37 31 65</strong></div></a><a class="contact-item" href="mailto:j.assistance.info@gmail.com"><span class="ci">✉️</span><div><small>E-mail</small><strong>j.assistance.info@gmail.com</strong></div></a><div class="contact-item"><span class="ci">📍</span><div><small>Adresse</small><strong>433 Grande Rue, 01340 Attignat</strong></div></div></div></div>
-<form class="form" action="mailto:j.assistance.info@gmail.com" method="post" enctype="text/plain"><h3>Demander une intervention</h3><label>Votre nom<input name="Nom" placeholder="Nom et prénom" required></label><label>Votre e-mail<input name="Email" type="email" placeholder="vous@exemple.fr" required></label><label>Téléphone<input name="Téléphone" placeholder="06..."></label><label>Votre besoin<textarea name="Message" rows="4" placeholder="Décrivez votre problème..." required></textarea></label><button class="btn primary" type="submit">Envoyer ma demande →</button><small>Le formulaire ouvre votre logiciel de messagerie. Il pourra ensuite être relié à un formulaire en ligne.</small></form>
+<form class="form" action="https://formspree.io/f/mvkgpnke" method="POST" target="_top">
+<h3>Demander une intervention</h3>
+<input type="hidden" name="_subject" value="Nouvelle demande - JR Solutions Informatiques">
+<label>Votre nom<input name="name" placeholder="Nom et prénom" required></label>
+<label>Votre e-mail<input name="email" type="email" placeholder="vous@exemple.fr" required></label>
+<label>Téléphone<input name="telephone" type="tel" placeholder="06..."></label>
+<label>Votre besoin<textarea name="message" rows="4" placeholder="Décrivez votre problème..." required></textarea></label>
+<button class="btn primary" type="submit">Envoyer ma demande →</button>
+<small>Votre demande est envoyée de façon sécurisée. Je vous répondrai par e-mail ou par téléphone.</small>
+</form>
 </div></section>
 </main>
 
